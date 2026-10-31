@@ -53,6 +53,18 @@ Conferir hardware → Conectar ADB → Inventário → Instalar e testar FLaunch
 6. [O que descobrimos sobre bootloader/root](docs/06-boot-e-firmware.md)
 7. [Privacidade antes de compartilhar arquivos](docs/07-privacidade.md)
 
+## Painel de tarefas para a TV
+
+O app **[Painel da TV](tv-panel/README.md)** mostra CPU total e por processo,
+RAM disponível, memória residente dos apps e zRAM/swap. É navegável pelo controle
+remoto e permite encerrar apps individualmente, com confirmação e proteção de
+serviços essenciais, launcher e teclado.
+
+Funciona sem root usando ADB local autorizado na própria TV. Código Java,
+recursos, testes e scripts de compilação estão em [`tv-panel/`](tv-panel/).
+A instalação é independente dos perfis de debloat. A persistência da conexão
+após reiniciar a TV ainda depende de validação neste firmware.
+
 ## Uso dos scripts
 
 Requisitos: Python 3.10+ e [ADB oficial](https://developer.android.com/tools/releases/platform-tools).
@@ -115,6 +127,9 @@ documentação deste repositório, não o software desses terceiros.
 ```bash
 python3 -m unittest discover -s tests -v
 python3 scripts/check_public_tree.py
+
+# Requer JDK 17+; não precisa de Android SDK nem de TV conectada.
+./tv-panel/test.sh
 ```
 
 Os testes simulam ADB e verificam reversão, interrupções, troca de HOME, AppOps e

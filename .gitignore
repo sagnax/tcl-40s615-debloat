@@ -18,3 +18,11 @@ __pycache__/
 *.pem
 *.key
 .DS_Store
+
+# Saídas de compilação e chaves privadas do painel Android.
+/tv-panel/build/
+*.jks
+*.keystore
+*.pk8
+*.dex
+*.jar

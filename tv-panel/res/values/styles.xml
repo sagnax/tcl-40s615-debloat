@@ -1,0 +1,9 @@
+<resources>
+    <style name="PanelTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#78E5C3</item>
+        <item name="android:windowBackground">#101722</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

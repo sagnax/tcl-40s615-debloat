@@ -7,8 +7,8 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-PRIVATE = {".tools", "reports", "private", "backups", ".venv", ".git", "__pycache__", ".pytest_cache"}
-FORBIDDEN_SUFFIXES = {".apk", ".apks", ".img", ".bin", ".pkg", ".zip", ".log", ".pem", ".key"}
+PRIVATE = {".tools", "reports", "private", "backups", ".venv", ".git", "__pycache__", ".pytest_cache", "build"}
+FORBIDDEN_SUFFIXES = {".apk", ".apks", ".img", ".bin", ".pkg", ".zip", ".log", ".pem", ".key", ".jks", ".keystore", ".pk8", ".dex", ".jar"}
 PATTERNS = {
     "token GitHub": r"\b(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,})\b",
     "chave privada": r"-----BEGIN (?:[A-Z]+ )?PRIVATE KEY-----",

@@ -20,6 +20,11 @@ Não use `git add -f` nessas pastas. Não envie logs completos em issues mesmo
 que estejam fora do Git. Para relatar um problema, descreva o sintoma e informe
 modelo, plataforma, versão de firmware e pacote envolvido; revise o texto.
 
+No painel Android, a pasta `tv-panel/build/` contém o APK gerado e a chave de
+assinatura de desenvolvimento. Ela fica fora do Git. Também são excluídos
+keystores (`.jks`, `.keystore`) e chaves ADB (`.pk8`). Preserve sua chave de
+assinatura local para atualizar o app instalado, sem publicá-la.
+
 Também devem permanecer privados: ESN Netflix, MACs, serial do bootloader,
 prefixos de lote associados à sua unidade, SSIDs, senhas, tokens, e-mails,
 hostname e caminhos pessoais de arquivos.

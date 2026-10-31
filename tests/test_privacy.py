@@ -26,6 +26,10 @@ class PrivacyTests(unittest.TestCase):
     def test_rejects_private_paths_and_binary_artifacts(self):
         self.assertIn("caminho privado", check.findings("reports/dump.json", b"{}"))
         self.assertIn("artefato privado/binário", check.findings("backup.apk", b"PK"))
+        for name in ("panel.jks", "panel.keystore", "local-adb.pk8", "classes.dex", "classes.jar"):
+            with self.subTest(artifact=name):
+                self.assertIn("artefato privado/binário", check.findings(name, b"generated"))
+        self.assertIn("caminho privado", check.findings("tv-panel/build/sources.txt", b"source"))
         self.assertFalse(check.findings("docs/modelo.md", b"TCL 40S615 / C06 / T221T01"))
 
     @unittest.skipUnless(shutil.which("git"), "Teste do índice requer git")
