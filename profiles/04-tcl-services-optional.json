@@ -1,0 +1,9 @@
+{
+  "description": "Teste posterior ao Guard. Desativa também o atualizador TCL: restaurar antes de atualização de firmware. Não altera com.tcl.tv, com.tcl.tvinput ou sitatvservice.",
+  "packages": [
+    {
+      "package": "com.tcl.ttvs",
+      "reason": "Pacote com serviços de estatísticas de uso/BI, conta, mensagens, integração Alexa e atualizador TCL. Usuário autorizou avaliar sua desativação para reduzir trabalho em background."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Segundo lote, aplicar somente após confirmar FLauncher como HOME funcional. Estado original preservado nos registros.",
+  "packages": [
+    {
+      "package": "com.google.android.tvrecommendations",
+      "reason": "Provedor de recomendações do launcher Google já desativado. O novo launcher usa grade local de apps."
+    }
+  ]
+}

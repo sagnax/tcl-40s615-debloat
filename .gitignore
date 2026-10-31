@@ -1,0 +1,20 @@
+# Inventários, identificadores e registros de reversão ficam somente na máquina.
+/reports/
+/private/
+/backups/
+/.tools/
+/.venv/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+*.apk
+*.apks
+*.img
+*.bin
+*.pkg
+*.zip
+*.log
+*.pem
+*.key
+.DS_Store

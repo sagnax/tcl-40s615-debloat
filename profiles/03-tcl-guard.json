@@ -1,0 +1,9 @@
+{
+  "description": "Teste isolado do TCL Guard, solicitado pelo usuário. Compartilha UID de sistema: usar apenas estado do pacote, sem alterar AppOps do UID.",
+  "packages": [
+    {
+      "package": "com.tcl.guard",
+      "reason": "Gerência e limpeza proprietárias: TGuardService, DeviceUseService, IOLimitService, HealthInfoHandleService e CleanRubbishService ativos. Testar desativação reversível e validar após reboot."
+    }
+  ]
+}

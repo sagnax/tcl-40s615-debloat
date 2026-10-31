@@ -1,0 +1,13 @@
+{
+  "description": "Primeiro lote, opcional para quem dispensa busca/voz e feedback. Revisado em TCL 40S615 C06/T221T01 V622. Preservar HDMI, Cast e streaming.",
+  "packages": [
+    {
+      "package": "com.google.android.katniss",
+      "reason": "App Google de busca/Assistant, serviço de interação de voz ativo confirmado por settings. Usuário dispensou voz; não é o receptor Cast."
+    },
+    {
+      "package": "com.google.android.feedback",
+      "reason": "Envio de feedback Google, APK GoogleFeedback com UID próprio; dispensável para reprodução e entradas."
+    }
+  ]
+}
